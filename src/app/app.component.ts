@@ -8,5 +8,7 @@ import {PhaserComponent, config} from './phaser/phaser.component';
 })
 export class AppComponent  {
   name = 'Angular';
-
+  constructor(){
+    console.log('hiiiiii222');
+  }
 }

@@ -1,20 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import "phaser";
-import { MainScene } from "./scenes/mainScene";
-
-export const config: Phaser.Types.Core.GameConfig = {
-  width: 800,
-  height: 600,
-  type: Phaser.AUTO,
-  parent: "game",
-  scene: MainScene,
-  physics: {
-    default: "arcade",
-    arcade: {
-      gravity: { y: 200 }
-    }
-  }
-};
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import * as Phaser from 'p'
 
 @Component({
   selector: 'app-phaser',
@@ -28,9 +13,13 @@ export const config: Phaser.Types.Core.GameConfig = {
   }
 
 }*/
-export class PhaserComponent extends Phaser.Game {
+export class PhaserComponent implements AfterViewInit  {
   constructor() {
-    //super(config);
-    super(config);
+    console.log("holar");
+    
+  }
+
+  ngAfterViewInit() {
+    // ...
   }
 }

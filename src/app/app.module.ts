@@ -14,4 +14,8 @@ import { PhaserComponent } from './phaser/phaser.component';
   declarations: [ AppComponent, HelloComponent, PhaserComponent ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(){
+    console.log('hiiiiii');
+  }   
+}
