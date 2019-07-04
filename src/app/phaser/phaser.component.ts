@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import * as Phaser from 'p'
+import * as Phaser from 'ph'
 
 @Component({
   selector: 'app-phaser',

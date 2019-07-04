@@ -22,4 +22,5 @@ platformBrowserDynamic().bootstrapModule(AppModule).then(ref => {
 console.log("hola");
 
 window.PIXI = PIXI;
+PIXI = PIXI;
 console.log(window);
